@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PMDM</string>
+    <string name="label">Aqui saldra la suma</string>
+    <string name="boton">Pulsame</string>
+    <string name="introduce_tu_nombre">Introduce un número</string>
+    <string name="enviar">Enviar</string>
+
+</resources>
