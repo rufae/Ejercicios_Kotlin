@@ -1,38 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejercicio3.MainActivity">
+    android:orientation="vertical"
+    >
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!-- LinearLayout horizontal para los botones -->
+
+
+    <!-- LinearLayout vertical para el EditText -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
         android:gravity="center"
-        android:background="@android:color/holo_blue_light"
-        android:padding="16dp">
+        android:background="@color/white">
 
-        <Button
-            android:id="@+id/buttonFirst"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ir a FirstActivity"
-            android:layout_marginBottom="16dp"/>
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="731dp"
+            android:background="@color/blue"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/buttonSecond"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ir a SecondActivity"
-            android:layout_marginBottom="16dp"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/buttonThird"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="153dp"
             android:layout_height="wrap_content"
-            android:text="Ir a ThirdActivity"/>
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnActivity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad 1" />
+
+            <Button
+                android:id="@+id/btnActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad 2" />
+
+            <Button
+                android:id="@+id/btnActivity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad 3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="731dp"
+            android:background="@color/blue"
+            android:orientation="vertical">
+        </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

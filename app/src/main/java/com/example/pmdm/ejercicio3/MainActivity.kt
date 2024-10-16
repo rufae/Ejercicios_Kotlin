@@ -11,26 +11,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainejer_3)
 
-        // Referencias a los botones
-        val buttonFirst = findViewById<Button>(R.id.buttonFirst)
-        val buttonSecond = findViewById<Button>(R.id.buttonSecond)
-        val buttonThird = findViewById<Button>(R.id.buttonThird)
+        val btnActivity1 = findViewById<Button>(R.id.btnActivity1)
+        val btnActivity2 = findViewById<Button>(R.id.btnActivity2)
+        val btnActivity3 = findViewById<Button>(R.id.btnActivity3)
 
-        // Configurar el listener para cada botón
-        buttonFirst.setOnClickListener {
-            val intent = Intent(this, FirstActivity::class.java)
-            startActivity(intent)
+        btnActivity1.setOnClickListener {
+            startActivity(Intent(this, FirstActivity::class.java))
         }
 
-        buttonSecond.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
+        btnActivity2.setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
         }
 
-        buttonThird.setOnClickListener {
-            val intent = Intent(this, ThirdActivity::class.java)
-            startActivity(intent)
+        btnActivity3.setOnClickListener {
+            startActivity(Intent(this, ThirdActivity::class.java))
         }
     }
-
 }

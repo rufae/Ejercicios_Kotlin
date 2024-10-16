@@ -3,14 +3,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@android:color/holo_green_light"
-    android:padding="16dp">
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Esta es la SecondActivity"
-        android:textSize="24sp"
-        android:textColor="@android:color/white"/>
+    <!-- LinearLayout vertical para el EditText -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="156dp"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <LinearLayout
+            android:layout_width="158dp"
+            android:layout_height="366dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="166dp"
+            android:layout_height="381dp"
+            android:background="@color/red" />
+
+        <LinearLayout
+            android:layout_width="149dp"
+            android:layout_height="387dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="158dp"
+            android:layout_height="368dp"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+
 </LinearLayout>
